@@ -12,7 +12,7 @@
     <script>
         const age = window.prompt("Please enter your age: ");
 
-        if (isNaN(age)) {
+        if (age < 0 || age > 120 || Number.isNaN(Number(age))) {
             document.getElementById("result").innerHTML = "Invalid input.";
         } else {
             if (age >= 18) {
@@ -23,5 +23,6 @@
         }
     </script>
 </body>
+</html>
 
 </html>
