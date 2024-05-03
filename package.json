@@ -1,0 +1,15 @@
+{
+  "name": "javascrpits",
+  "version": "1.0.0",
+  "description": "Learning, practicing and generating ideas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Arthur Lewyins <lightslayer135@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "llama": "^2.1.13"
+  }
+}
