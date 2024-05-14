@@ -11,5 +11,8 @@
   "license": "MIT",
   "dependencies": {
     "llama": "^2.1.13"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.3"
   }
 }
