@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body style="background-color: grey; color: white">
+    <p id="p1">Hello World!</p>
+    <ul class="javascript">
+        <li>js</li>
+    </ul>
+</body>
+<script>
+    function addLanguage(langName) {
+        const li = document.createElement("li");
+        li.innerHTML = `${langName}`;
+        document.querySelector(".javascript").appendChild(li);
+    }
+    addLanguage("python");
+    addLanguage("typeScript");
+    function addOptiLanguage(langName) {
+        const li = document.createElement("li");
+        li.appendChild(document.createTextNode(langName));
+        document.querySelector(".javascript").appendChild(li);
+    }
+    addOptiLanguage("golang");
+    //edit
+    const seclang = document.querySelector("li:nth-child(2)");
+    const newLi = document.createElement("li");
+    newLi.textContent = "apple"
+    seclang.replaceWith(newLi);
+
+    const seconflang = document.querySelector("li:first-child")
+    document.getElementById("p1").innerHTML = "New text!";
+    seconflang.innerHTML.repeat = '<li>typescripts</li>'
+
+</script>
+
+</html>
